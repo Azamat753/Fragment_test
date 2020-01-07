@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:padding="16dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/first_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="1"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
+
+    <Button
+        android:id="@+id/second_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="2"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
+</LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/first_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.geekteck.fragment_test.FirstFragment"
+        tools:layout="@layout/fragment_first"/>
+
+    <fragment
+        android:id="@+id/second_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.geekteck.fragment_test.SecondFragment"
+        tools:layout="@layout/fragment_second"/>
+
+
+
+</LinearLayout>
